@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["--encoder", "vits",
+             "--load-from", "/workspaces/Depth-Anything-V2/metric_depth/checkpoints/depth_anything_v2_metric_hypersim_vits.pth",
+             "--max-depth", "20",
+             "--img-path", "/workspaces/Depth-Anything-V2/metric_depth/assets/img1.jpg",
+             "--outdir", "/workspaces/Depth-Anything-V2/metric_depth/assets/out",
+             "--focal-length-x", "6",
+             "--focal-length-y", "6"
+        ]
+        }
+    ],
+    
+}
